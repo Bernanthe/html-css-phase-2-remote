@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="main-header">
+    <header class="main-header">
+        <div class="hero-container main-header-container">
             <div class="main-header-wrp">
                 <h1 class="main-header-title">Product name</h1>
                 <ul class="main-header-list">
@@ -22,9 +22,11 @@
                 </ul>
             </div>
             <img class="main-header-img" src="#" alt="фото товара">
-        </header>
-        <main class="content">
-            <section class="about-product">
+        </div>
+    </header>
+    <main class="content">
+        <section class="about-product">
+            <div class="hero-container container-about-product">
                 <div>
                     <h2 class="about-product-title">About your product</h2>
                     <p class="about-product-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
@@ -39,9 +41,11 @@
                         sapiente quisquam, quo eveniet officia placeat, in obcaecati repudiandae tempore enim aut veniam
                         tenetur beatae harum!</p>
                 </div>
-                <video class="about-product-video" src="#" width="" height=""></video>
-            </section>
-            <section class="dignity">
+                <video class="about-product-video" controls src="video.mp4" width="430px" height=""></video>
+            </div>
+        </section>
+        <section class="dignity">
+            <div class="hero-container dignity-container">
                 <h2 class="dignity-title">Dignity and pluses product</h2>
                 <ul class="dignity-list">
                     <li class="dignity-list-text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
@@ -69,8 +73,10 @@
                         ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro
                         totam, dolore minus inventore.</li>
                 </ul>
-            </section>
-            <section class="screenshots-section">
+            </div>
+        </section>
+        <section class="screenshots">
+            <div class="hero-container screenshots-container">
                 <h2 class="screenshots-title">Screenshots</h2>
                 <div class="screenshots-figure-wrp">
                     <figure class="screenshots-figure-block">
@@ -114,8 +120,10 @@
                         </figcaption>
                     </figure>
                 </div>
-            </section>
-            <section class="reviews">
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="hero-container reviews-container">
                 <h2 class="reviews-title">Reviews</h2>
                 <div class="reviews-wrp">
                     <div class="reviews-block">
@@ -171,67 +179,98 @@
                         </blockquote>
                     </div>
                 </div>
-            </section>
-            <section class="prices">
-                <h2></h2>
-                <div>
-                    <h3></h3>
-                    <span></span>
-                    <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
-                    <button>buy</button>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="hero-container prices-container">
+                <h2>Buy it now</h2>
+                <div class="prices-wrp">
+                    <div class="prices-standart">
+                        <h3>Standart</h3>
+                        <span class="prices-value">$100</span>
+                        <ol class="prices-info">
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste
+                                quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque.</li>
+                        </ol>
+                        <button class="prices-button-buy">buy</button>
+                    </div>
+                    <div class="prices-premium">
+                        <h3>Premium</h3>
+                        <span class="prices-value">$150</span>
+                        <ol class="prices-info">
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque;</li>
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque.</li>
+                        </ol>
+                        <button class="prices-button-buy">buy</button>
+                    </div>
+                    <div class="prices-lux">
+                        <h3>Lux</h3>
+                        <span class="prices-value">$200</span>
+                        <ol class="prices-info">
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque;</li>
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque;</li>
+                            <li>Porro officia cumque sint deleniti;</li>
+                            <li>Тemo facere rem vitae odit;</li>
+                            <li>Cum odio, iste quia doloribus autem;</li>
+                            <li>Aperiam nulla ea neque</li>
+                        </ol>
+                        <button class="prices-button-buy">buy</button>
+                    </div>
                 </div>
-                <div>
-                    <h3></h3>
-                    <span></span>
-                    <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
-                    <button>buy</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="contacts">
+            <div class="hero-container">
+                <div class="contacts-container">
+                    <h2 class="contacts-title">Contacts</h2>
+                    <div class="contacts-info">
+                        <form class="contacts-form" action="#">
+                            <input type="text" placeholder="Your name:" required>
+                            <input type="text" placeholder="Your email:" required>
+                            <textarea placeholder="Your message:"></textarea>
+                            <input class="input-button-submit" type="submit" value="SEND">
+                        </form>
+                        <div class="contacts-list">
+                            <ul>
+                                <li class="skype-icon contacts-list-item">here_your_login_skype</li>
+                                <li class="icq-icon contacts-list-item">279679659</li>
+                                <li class="email-icon contacts-list-item">psdhtmlcss@mail.ru</li>
+                                <li class="phone-icon contacts-list-item">80 00 4568 55 55</li>
+                            </ul>
+                            <img src="images/footer-twitter.svg" alt="twitter">
+                            <img src="images/footer-vk.svg" alt="vk">
+                            <img src="images/footer-google.svg" alt="google+">
+                            <img src="images/footer-facebook.svg" alt="facebook">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3></h3>
-                    <span></span>
-                    <ol>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
-                    <button>buy</button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section class="contacts">
-
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio laborum nihil iure voluptates ut hic?
-                    Eos aperiam, enim nam quae earum provident possimus, ducimus commodi eum veniam, facere sunt culpa?
-                </p>
-            </section>
-        </footer>
-    </div>
+            </div>
+        </section>
+        <div class="copyright-wrp">
+            <div class="hero-container">
+                <section class="copyright">
+                    <p>Copyright © 2020 Product name · PSD HTML CSS</p>
+                </section>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

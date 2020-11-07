@@ -1,13 +1,15 @@
 body {
     font-family: Arial;
 }
-.container {
+.hero-container {
     width: 1280px;
     margin: 0 auto;
 }
 .main-header {
     background-color: #445162;
     color: white;
+}
+.main-header-container {
     padding: 50px;
     overflow: auto;
 }
@@ -44,12 +46,15 @@ body {
     float: right;   
 }
 .about-product {
+    background-color: white;
+    color: #445161;
+}
+.container-about-product {
     padding: 50px;
     display: flex;
     justify-content: space-between;
 }
 .about-product-title {
-    color: 445161;
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 17px;
@@ -68,6 +73,8 @@ body {
 }
 .dignity {
     background-color: #f5f5f5;
+}
+.dignity-container {
     padding: 25px 50px 24px 50px;
 }
 .dignity-title {
@@ -78,12 +85,18 @@ body {
     margin-bottom: 15px;
 }
 .dignity-list {
-    columns: 2;
+    width: 100%;
+    overflow: hidden;
 }
 .dignity-list-text {
+    width: 625px;
+    float: left;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 26px;
+    margin: 0px 26px 26px 0px;
+}
+.dignity-list-text:nth-child(even){
+    margin-right:0;
 }
 .dignity-list-text::before {
     content: url(images/dignity-list-icon.png);
@@ -92,22 +105,31 @@ body {
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.screenshots-section {
+.screenshotsn {
+    color: #445161;
+}
+.screenshots-container {
     padding: 25px 50px 23px 50px;
 }
 .screenshots-title {
-    color: #445161;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     margin-bottom: 45px;
 }
 .screenshots-figure-wrp {
-    columns: 2;
+    width: 100%;
+    overflow: hidden;
 }
 .screenshots-figure-block {
+    width: 625px;
+    float: left;
     overflow: auto;
     margin-bottom: 27px;
+    margin: 0px 26px 26px 0px;
+}
+.screenshots-figure-block:nth-child(even){
+    margin-right:0;
 }
 .screenshots-figure-img {
     width: 200px;
@@ -119,7 +141,6 @@ body {
     overflow: hidden;
 }
 .screenshots-sub-title {
-    color: #445161;
     font-size: 24px;
     line-height: 30px;
 }
@@ -130,6 +151,8 @@ body {
 }
 .reviews {
     background-color: #f5f5f5;
+}
+.reviews-container {
     padding: 25px 50px 24px 50px;
 }
 .reviews-title {
@@ -140,10 +163,16 @@ body {
     text-align: center;
 }
 .reviews-wrp {
-    columns: 2;
+    width: 100%;
+    overflow: hidden;
 }
 .reviews-block {
-    margin-bottom: 24px;
+    width: 625px;
+    float: left;
+    margin: 0px 26px 26px 0px;
+}
+.reviews-block:nth-child(even){
+    margin-right:0;
 }
 .reviews-photo {
     float: left;
